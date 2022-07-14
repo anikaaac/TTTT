@@ -1,0 +1,309 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&family=Luckiest+Guy&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+.form{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+}
+/* search bar */
+form.example input[type=text] {
+  /* padding: 10px; */
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+}
+.navbar .example button {
+  float: right;
+  width: 19%;
+  padding: 10px;
+  margin-top:40px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  right: 0;
+}
+/* form.example button{
+ 
+  float: right;
+  width: 19%;
+  padding: 10px;
+  margin:0;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  /* cursor: pointer;
+  right: 0;
+ 
+
+  
+} */ 
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+.navbar-toggler{
+  display: flex;
+  
+}
+a{
+  cursor:pointer;
+}
+.pull-left{
+  height:100px;
+  width:100px;
+  object-fit:cover;
+  margin-left:10px;
+  margin-right:30px;
+}
+
+/* Add a black background color to the top navigation bar */
+
+.navbar {
+  display:flex;
+  flex:wrap;
+  overflow: hidden;
+  background-color: #C3A3B8;
+  width:100%;
+  top:0;
+  left:0;
+  margin:none;
+   font-family: 'Passion One', cursive;
+}
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  right: 0;
+  padding: 6px;
+  border: none;
+  margin-top: 35px;
+  margin-right: 16px;
+  margin-bottom:8px;
+  font-size: 17px;
+  width:15%;
+  height:30px;
+}
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top:40px;
+  text-decoration: none;
+  font-size: 23px;
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: pink;
+  color: black;
+  font-size: 21px;
+}
+
+/* Style the "active" element to highlight the current page */
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .navbar a, .navbar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* drop down */
+
+dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  /* float:right; */
+  font-size: 23px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  padding-top:40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+  color: black;
+  font-size: 28px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: black; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background:rgb(211, 206, 206);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+
+
+.blank{
+  color:#90fac3ff;
+  font-size:1px;
+}
+.ment{
+  background-color:#90fac3ff;
+  
+}
+.health{
+  margin-top:20px;
+  margin-bottom:20px;
+  color:white;
+  text-shadow: 2px 2px 2px rgb(0, 0, 0), 0 0 25px rgb(3, 54, 3), 0 0 5px rgb(34, 121, 95);
+  text-align:center;
+  font-size:50px;
+  font-family: 'Luckiest Guy', cursive;
+}
+.lists{
+  margin-top:70px;
+  background-color:none;
+  float:left;
+}
+/* items in list */
+.random{
+  margin:5px;
+}
+.mh{ 
+  text-align:right;
+  position:absolute;
+  margin-top:10px;
+  padding-top:20px;
+  text-shadow: 2px 2px 3px black, 0 0 25px rgb(3, 54, 3), 0 0 5px rgb(3, 54, 3);
+  color:white;
+  
+  /* display:flex; */
+  
+}
+.brain{
+  float:left;
+  width:30%;
+  height:280px;
+  margin-bottom:20px;
+  border: 10px;
+  border-color: #90fac3ff;
+}
+.brainvid{
+  display: flex;
+  justify-content:center;
+  margin: 15px;
+  margin-bottom:80px;
+  padding-top:50px;
+}
+/* first div */
+.care{
+  width:70%;
+  float:right;
+  display:flex;
+  flex:wrap;
+  height:280px;
+  background-color:rgba(117, 184, 149, 0.623);
+  justify-content:center;
+  margin-bottom:20px;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+/* second div */
+.illness {
+  background-color:rgba(117, 184, 149, 0.623);
+  margin-top: 20px;
+  margin-left:5px;
+  margin-right:5px;
+  font-family: 'Baloo Da 2', cursive;
+}
+
+
+/* third div */
+.mhteens{
+  background-color:rgba(117, 184, 149, 0.623);
+  margin-top:35px;
+  margin-left:5px;
+  margin-right:5px;
+  font-family: 'Baloo Da 2', cursive;
+}
+.mht{
+  text-align:center;
+  padding-top:20px;
+  text-shadow: 2px 2px 3px black, 0 0 25px rgb(3, 54, 3), 0 0 5px rgb(3, 54, 3);
+  color:white;
+}
+
+.mhth{
+  text-align:center;
+  padding-top:20px;
+  text-shadow: 2px 2px 3px black, 0 0 25px rgb(3, 54, 3), 0 0 5px rgb(3, 54, 3);
+  color:white;
+}
+
+.illp{
+  margin:10px;
+  line-height: 40px;
+  padding-bottom:20px;
+}
+.teenp{
+  margin:10px;
+  line-height: 40px;
+  padding-bottom:20px;
+}
+
+

@@ -1,0 +1,598 @@
+@import url('https://fonts.googleapis.com/css2?family=Baloo+Da+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Passion+One&display=swap');
+*{
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+}
+.form{
+  display:flex;
+  justify-content:space-between;
+  flex-direction:row;
+}
+/* search bar */
+form.example input[type=text] {
+  /* padding: 10px; */
+  font-size: 17px;
+  border: 1px solid grey;
+  float: left;
+  width: 70%;
+  background: #f1f1f1;
+  margin-top:40px;
+  margin-right:0px;
+  
+}
+
+input {
+  margin-right: 0px;
+}
+/* button */
+.navbar .example button {
+  float: right;
+  width: 19%;
+  padding: 10px;
+  margin-top:40px;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  cursor: pointer;
+  right: 0;
+  margin-left:0px;
+}
+/* form.example button{
+ 
+  float: right;
+  width: 19%;
+  padding: 10px;
+  margin:0;
+  background: #2196F3;
+  color: white;
+  font-size: 17px;
+  border: 1px solid grey;
+  border-left: none; /* Prevent double borders */
+  /* cursor: pointer;
+  right: 0;
+ 
+
+  
+} */ 
+form.example button:hover {
+  background: #0b7dda;
+}
+
+/* Clear floats */
+form.example::after {
+  content: "";
+  clear: both;
+  display: table;
+}
+
+.navbar-toggler{
+  display: flex;
+  
+}
+a{
+  cursor:pointer;
+}
+.pull-left{
+  height:100px;
+  width:100px;
+  object-fit:cover;
+  margin-left:10px;
+  margin-right:30px;
+}
+
+/* Add a black background color to the top navigation bar */
+
+.navbar {
+  display:flex;
+  flex:wrap;
+  overflow: hidden;
+  background-color: #C3A3B8;
+  width:100%;
+  top:0;
+  left:0;
+  margin:none;
+  font-family: 'Passion One', cursive;
+}
+/* Style the search box inside the navigation bar */
+.navbar input[type=text] {
+  float: right;
+  right: 0;
+  padding: 6px;
+  border: none;
+  margin-top: 35px;
+  margin-right: 0;
+  margin-bottom:8px;
+  font-size: 17px;
+  width:15%;
+  height:30px;
+}
+
+/* Style the links inside the navigation bar */
+.navbar a {
+  float: right;
+  display: block;
+  color: black;
+  text-align: center;
+  padding: 14px 16px;
+  padding-top:40px;
+  text-decoration: none;
+  font-size: 23px;
+
+}
+
+/* Change the color of links on hover */
+.navbar a:hover {
+  background-color: pink;
+  color: black;
+  font-size: 21px;
+}
+
+/* Style the "active" element to highlight the current page */
+.navbar a.active {
+  background-color: #2196F3;
+  color: white;
+}
+
+
+
+/* When the screen is less than 600px wide, stack the links and the search field vertically instead of horizontally */
+@media screen and (max-width: 600px) {
+  .navbar a, .navbar input[type=text] {
+    float: none;
+    display: block;
+    text-align: left;
+    width: 100%;
+    margin: 0;
+    padding: 14px;
+  }
+  .navbar input[type=text] {
+    border: 1px solid #ccc;
+  }
+}
+
+/* drop down */
+
+dropdown {
+  float: right;
+  overflow: hidden;
+}
+
+.dropdown .dropbtn {
+  /* float:right; */
+  font-size: 23px;  
+  border: none;
+  outline: none;
+  color: black;
+  padding: 14px 16px;
+  padding-top:40px;
+  background-color: inherit;
+  font-family: inherit;
+  margin: 0;
+  
+}
+
+.navbar a:hover, .dropdown:hover .dropbtn {
+  background-color: pink;
+  color: black;
+  font-size: 28px;
+}
+
+.dropdown-content {
+  display: none;
+  position: absolute;
+  /* background-color: black; */
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+  background:rgb(211, 206, 206);
+}
+
+.dropdown-content a {
+  float: none;
+  color: black;
+  padding: 12px 16px;
+  text-decoration: none;
+  display: block;
+  text-align: left;
+}
+
+.dropdown-content a:hover {
+  background-color: #ddd;
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+/* //homepage */
+body{
+  background-color:#fdbbeaff;
+  font-family: 'Passion One', cursive;
+}
+.goal{
+  background-color:hsla(317, 75%, 78%, 0.663);
+  font-size:20px;
+  font-weight:normal;
+  margin-top:30px;
+  line-height: 40px;
+}
+.img{
+  width: 100%;
+  height: 4850px;
+
+} /*width and height here :)
+
+
+
+/* Healthy 
+    display: inline-block;relationships */
+    
+.big4{
+  display:flex;
+  flex-direction: row;
+
+}
+.picShip{
+  width: 300px;
+  height: 300px;
+  display: flex;
+  justify-content:center;
+  
+  margin-left: 50px;
+  
+}
+
+.videoShip{ 
+  display: flex;
+  justify-content:center;
+  margin: 15px;
+}
+
+
+
+.infoOne{
+  background: #B695C0;
+  margin-bottom: 20px;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+
+}
+.question2{
+    background: #B695C0; 
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.question3{
+    background: #B695C0; 
+    margin-bottom: 20px;
+    margin-top: 30px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+
+.question4{
+    background: #B695C0; 
+    margin-bottom: 20px;
+    margin-top: 30px;
+    margin-right: 2px;
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    
+}
+ .titleShip2{
+   color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+  margin-right: 20px;
+ }
+
+.titleShip{
+  display:flex;
+  justify-content: center;
+  margin: 5px;
+  font-size: 20px;
+  color: white;
+  text-shadow: 1px 1px 2px black, 0 0 25px blue, 0 0 5px darkblue;
+  font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+}
+.relationship{
+  background-color:#E5CBF7;
+ 
+}
+
+
+.hotlineShip{
+  font-size: 30px;
+  position: absolute;
+  top: 120px;
+  right: 20px;
+
+}
+
+
+
+/* Sex ed */
+
+.edpage{
+  background-color:#a8dadc;
+  margin:0px;
+  padding:0px;
+  box-sizing:border-box;
+  
+}
+
+.ytvideo{
+  display:flex;
+  justify-content:center;
+  align-items: center;
+  text-align: center;
+}
+.thumbnail{
+font-size: 30px;
+font-weight: 200;
+font-family: Georgia, serif;
+
+}
+.how{
+  display:flex;
+  justify-content:center;
+  font-size:40px;
+border-top-style: solid;
+  border-top-color:#1d3557; 
+  font-family: Georgia, serif;
+  color: #333333;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+color: #333333; 
+margin-bottom: 20px;
+    margin-top: 30px;
+  
+  
+}
+.questionlist{
+  list-style-type:none;
+  border: 18px solid rgba(28,110,164,0.35);
+border-radius: 27px 0px 36px 0px;
+font-size: 20px;
+font-family: Georgia, serif;
+letter-spacing: -0.2px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background:#a9def9;
+}
+
+.text{
+  font-size:20px;
+  font-weight:normal;
+}
+#border {
+border: 18px solid rgba(28,110,164,0.35);
+border-radius: 27px 0px 36px 0px;
+font-size:20px;
+font-family: Georgia, serif;
+letter-spacing: -0.2px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background:#a9def9;
+margin-bottom: 20px;
+    margin-top: 30px;
+}
+
+ul {
+  background:#8fb8ed;
+  font-size:20px; 
+ }
+ .header2{
+  display:flex;
+  justify-content:center;
+  font-size:40px;
+border-top-style: solid;
+  border-top-color:#1d3557; 
+  font-family: Georgia, serif;
+  color: #333333;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+color: #333333;  
+margin-bottom: 20px;
+    margin-top: 30px;
+ }
+ #protectiontxt{
+  border: 18px solid rgba(28,110,164,0.35);
+border-radius: 27px 0px 36px 0px;
+font-size:20px;
+font-family: Georgia, serif;
+letter-spacing: -0.2px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background:#a9def9; 
+ }
+ .contraceptives{
+   width:500px;
+   height:400px;
+ }
+ .title{
+   font-size:40px; 
+  font-family: Georgia, serif;
+  color: #333333;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+color: #333333;  
+margin-bottom: 20px;
+    margin-top: 30px;
+   
+ }
+ .whatissex{
+   font-size:50px; 
+  font-family: Georgia, serif;
+  color: #333333;
+text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+color: #333333;  
+margin-bottom: 20px;
+    margin-top: 30px;
+   
+ }
+ #sextxt{
+   border: 18px solid rgba(28,110,164,0.35);
+border-radius: 27px 0px 36px 0px;
+font-size:20px;
+font-family: Georgia, serif;
+letter-spacing: -0.2px;
+word-spacing: 1.6px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+background:#a9def9; 
+   
+ }
+
+
+
+
+
+/*logo*/
+.logo{
+  width:150px;
+  display:flex;
+  justify-content:left;
+}
+
+/* hotlines */
+.dv{
+  width:45%;
+  /* display:inline-block; */
+  float:right; 
+  height:300px; 
+  padding-left:100px;
+  margin-top:40px;
+  
+  
+
+}
+.preg{
+  width:45%;  
+  display:block;
+  float:left;
+  height:300px; 
+  padding-left:40px;
+  left:40px;
+  margin-top:40px;
+  
+  /* background-color:#ecdbaab9; */
+}
+.crisis{
+  width:45%;  /* display:inline-block; */ 
+  float:right;  
+  height:300px; 
+  margin-top:40px;
+  padding-left:100px;
+  /* background-color:#ecdbaab9; */
+}
+.abuse{
+  width:45%;
+  /* display:inline-block; */
+  float:left;
+  height:300px; 
+  padding-left:40px;
+  margin-top:40px;
+  /* background-color:#ecdbaab9; */
+}
+.hl{
+  color:#ff8eb8ff;
+  font-size:27px;
+  text-weight:bold;
+}
+.hotlines{
+  background-color:#ffebb2ff;
+}
+.lines{
+  text-weight:bold;
+  text-align:center;
+  font-size:50px;
+  }
+  
+.linest{
+  text-weight:bold;
+  text-align:center;
+  color:black;
+}
+.b{
+  color:#2196F3;
+}
+.p{
+  line-height:40px;
+}
+/*image over text homepage*/
+.container {
+  position: relative;
+  text-align: center;
+  color: white;
+  font-size:80px; 
+  font-family: Georgia, serif;
+  color: #333333;
+  text-shadow: 2px 2px 0px #FFFFFF, 5px 4px 0px rgba(0,0,0,0.15);
+  color: #333333;  
+  margin-bottom: 20px;
+    margin-top: 30px;
+}
+.centered {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  background:#fdbbeaff;
+  font-family: 'Passion One', cursive;
+}
+
+/* About us */
+ .aboutus{
+  background:#b8bedd;
+}
+.vbio,.gbio,.albio,.anbio{ 
+  margin: auto;
+  width: 50%;
+  border: 3p;
+  padding: 10px;
+  background:#dee2ff;
+  font-family: "Times New Roman", Times, serif;
+font-size: 15px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+
+}
+
+.vastiname,.galileaname,.anikaname,.alicianame{
+  font-family: "Times New Roman", Times, serif;
+font-size: 25px;
+letter-spacing: 2px;
+word-spacing: 2px;
+color: #000000;
+font-weight: normal;
+text-decoration: none;
+font-style: normal;
+font-variant: normal;
+text-transform: none;
+  }
